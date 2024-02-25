@@ -6,7 +6,7 @@ This a modern PokeDex using React, PokeAPI and Material UI. It contains all poke
 ---
 
 ## Features:
----
+
 - Filter Pokemon based on their type and region
 - Search Pokemon by their name or ID number
 - View base stats of pokemon
