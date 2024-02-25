@@ -90,7 +90,7 @@ export default function InfoDialog(props) {
                                     {props.generation}
                                 </div>
                                 <div>
-                                    <img src={props.img} alt="poke-img" />
+                                    <img src={props.img} alt="pokemon image" />
                                 </div>
                                 <div className="info_container_data_type">
                                     {props.category.map((category) =>
@@ -100,7 +100,7 @@ export default function InfoDialog(props) {
                                             title={category.type.name} 
                                             arrow>
                                             <div key={category.type.name} className={`poke_type_bg ${category.type.name}`}>
-                                                <img src={`${category.type.name}.png`} alt="poke-type"></img>
+                                                <img src={`${category.type.name}.png`} alt="Pokemon type"></img>
                                             </div>
                                         </Tooltip>
                                     )}
@@ -162,7 +162,7 @@ export default function InfoDialog(props) {
                                                             <div className="evolution_img_div" style={{ background: `linear-gradient(${finalColor[0]}, ${finalColor[1]})` }}>
                                                                 <div className="transparency_div">
                                                                     <LazyLoadImage
-                                                                        alt="image-pokemon"
+                                                                        alt="Pokemon evolution image"
                                                                         height={80}
                                                                         width={80}
                                                                         src={elements[index].image_url}

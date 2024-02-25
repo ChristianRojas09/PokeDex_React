@@ -28,7 +28,7 @@ const Pokemon = ({ id, image, name, type, onElemClick }) => {
             </div>
             <div className="image_container">
                 <LazyLoadImage
-                    alt="image-pokemon"
+                    alt="Pokemon image"
                     height={150}
                     src={image}
                     visibleByDefault={false}
@@ -44,7 +44,7 @@ const Pokemon = ({ id, image, name, type, onElemClick }) => {
                         <Tooltip TransitionComponent={Zoom} key={type.type.name} title={type.type.name} arrow>
                             <div
                                 className={`poke_type_bg ${type.type.name}`}>
-                                <img src={`${type.type.name}.png`} alt="poke-type"></img>
+                                <img src={`${type.type.name}.png`} alt="Pokemon type"></img>
                             </div>
                         </Tooltip>
                     )}
