@@ -1,10 +1,10 @@
 import React from 'react'
 import '../styles/Pokemon.css'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
-import { colorTypeGradients } from '../utils/utils';
-import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { colorTypeGradients } from '../utils/utils';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import Tooltip from '@material-ui/core/Tooltip';
 
 const Pokemon = ({ id, image, name, type, onElemClick }) => {
 
@@ -43,8 +43,8 @@ const Pokemon = ({ id, image, name, type, onElemClick }) => {
                     {type.map((type) =>
                         <Tooltip TransitionComponent={Zoom} key={type.type.name} title={type.type.name} arrow>
                             <div
-                                className={`poke_type_bg ${type.type.name}`}>
-                                <img src={`${type.type.name}.png`} alt="Pokemon type"></img>
+                                className={`pokemon_type_bg ${type.type.name}`}>
+                                <img src={`${type.type.name}.png`} alt="Pokemon type icon"></img>
                             </div>
                         </Tooltip>
                     )}

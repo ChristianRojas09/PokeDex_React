@@ -99,7 +99,7 @@ export default function InfoDialog(props) {
                                             key={category.type.name} 
                                             title={category.type.name} 
                                             arrow>
-                                            <div key={category.type.name} className={`poke_type_bg ${category.type.name}`}>
+                                            <div key={category.type.name} className={`pokemon_type_bg ${category.type.name}`}>
                                                 <img src={`${category.type.name}.png`} alt="Pokemon type"></img>
                                             </div>
                                         </Tooltip>
@@ -168,7 +168,7 @@ export default function InfoDialog(props) {
                                                                         src={elements[index].image_url}
                                                                         visibleByDefault={false}
                                                                         delayMethod={'debounce'}
-                                                                        effect="blur"
+                                                                        effect="opacity"
                                                                         className="evo_img"
                                                                         onClick={() => props.evolutionPokemon(props.number, elements[index].species_name, props.category, elements[index].image_url)}
                                                                     />
