@@ -19,7 +19,7 @@ const Pokemon = ({ id, image, name, type, onElemClick }) => {
     return (
         <div className="thumbnail_container noselect" style={{ background: `linear-gradient(${finalColor[0]}, ${finalColor[1]})` }}>
             <div className="card_header">
-                <div className="poke_number">
+                <div className="pokemon_number">
                     #{String(id).padStart(3, '0')}
                 </div>
                 <div className="info_icon" onClick={() => onElemClick({ name })}>

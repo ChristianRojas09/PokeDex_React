@@ -81,7 +81,7 @@ h3 {
   color: var(--pokename);
 }
 
-.thumbnail_container .poke_number {
+.thumbnail_container .pokemon_number {
   border-radius: 1rem;
   padding: 0.2rem 0.4rem;
   font-weight: 400;
@@ -225,7 +225,7 @@ h3 {
   width: 150px;
 }
 
-.poke_name h3 {
+.pokemon_name h3 {
   margin-top: 0px;
 }
 
@@ -248,10 +248,10 @@ h3 {
     height: 90px;
     width: 90px;
   }
-  .thumbnail_container .poke_number {
+  .thumbnail_container .pokemon_number {
     font-size: 1.75em;
   }
-  .poke_name h3 {
+  .pokemon_name h3 {
     margin-top: 15px;
     font-size: 1em;
   }

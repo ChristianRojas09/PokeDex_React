@@ -209,7 +209,7 @@ html[data-theme=dark] {
 	margin-top: 3vh;
 }
 
-.evolution_poke_name {
+.evolution_pokemon_name {
 	text-transform: capitalize;
 	margin: 10px 0;
 }
