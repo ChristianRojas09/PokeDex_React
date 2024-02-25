@@ -1,0 +1,261 @@
+:root {
+  --grass: #5FBD58;
+  --bug: #92BC2C;
+  --dark: #595761;
+  --dragon: #0C69C8;
+  --electric: #F2D94E;
+  --fairy: #EE90E6;
+  --fighting: #D3425F;
+  --fire: #dc872f;
+  --flying: #A1BBEC;
+  --ghost: #5F6DBC;
+  --ground: #DA7C4D;
+  --ice: #75D0C1;
+  --normal: #A0A29F;
+  --poison: #B763CF;
+  --psychic: #ff2ca8;
+  --rock: #a38c21;
+  --steel: #5695A3;
+  --water: #539DDF;
+}
+
+html {
+  --pokename: #000;
+  --cardborder: #fff;
+  --pokenumber: hsl(228, 28%, 20%);
+  --info: #fff
+}
+
+html[data-theme=dark] {
+  --pokename: hsl(228, 28%, 20%);
+  ;
+  --cardborder: hsl(228, 28%, 20%);
+  --pokenumber: hsl(228, 28%, 20%);
+  --info: hsl(228, 28%, 20%);
+}
+
+.thumbnail_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  margin: 2rem;
+  /* border: 15px solid var(--cardborder); */
+  border-radius: 1rem;
+  min-width: 220px;
+  height: 285px;
+  text-align: center;
+  /* box-shadow: 0 5px 25px 1px rgb(0 0 0 / 50%); */
+  box-shadow:
+  0 1.6px 1.6px rgba(0, 0, 0, 0.023),
+  0 3.8px 3.8px rgba(0, 0, 0, 0.034),
+  0 6.9px 6.9px rgba(0, 0, 0, 0.041),
+  0 11.4px 11.4px rgba(0, 0, 0, 0.049),
+  0 18.8px 18.8px rgba(0, 0, 0, 0.056),
+  0 32.8px 32.8px rgba(0, 0, 0, 0.067),
+  0 71px 71px rgba(0, 0, 0, 0.09)
+;
+  transition: all 0.2s ease-in-out;
+}
+
+.thumbnail_container:hover {
+  transform: scale(1.1);
+}
+
+.info_icon {
+  margin-right: 15px;
+  margin-top: -4px;
+  font-size: 25px;
+  color: var(--info);
+  opacity: 0.5;
+}
+
+.info_icon:hover {
+  opacity: 1;
+}
+
+h3 {
+  font-family: 'Press Start 2P', cursive;
+  margin-bottom: 0.2rem;
+  color: var(--pokename);
+}
+
+.thumbnail_container .poke_number {
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  font-weight: 400;
+  font-size: 35px;
+  color: var(--pokenumber);
+  font-family: 'Teko', sans-serif;
+}
+
+.thumbnail_container img {
+  width: 120px;
+  height: 120px;
+}
+
+.thumbnail_container small {
+  text-transform: capitalize;
+}
+
+.card_header {
+  width: -webkit-fill-available;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poke_type {
+  display: flex;
+  grid-gap: 0 10px;
+  gap: 0 20px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.poke_type_bg>img {
+  width: 20px;
+  height: 20px;
+}
+
+.poke_type_bg {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.grass {
+  background: var(--grass);
+  box-shadow: 0 0 20px var(--grass);
+}
+
+.bug {
+  background: var(--bug);
+  box-shadow: 0 0 20px var(--bug);
+}
+
+.dark {
+  background: var(--dark);
+  box-shadow: 0 0 20px var(--dark);
+}
+
+.dragon {
+  background: var(--dragon);
+  box-shadow: 0 0 20px var(--dragon);
+}
+
+.electric {
+  background: var(--electric);
+  box-shadow: 0 0 20px #796d26;
+}
+
+.fairy {
+  background: var(--fairy);
+  box-shadow: 0 0 20px var(--fairy);
+}
+
+.fighting {
+  background: var(--fighting);
+  box-shadow: 0 0 20px var(--fighting);
+}
+
+.flying {
+  background: var(--flying);
+  box-shadow: 0 0 20px var(--flying);
+}
+
+.ghost {
+  background: var(--ghost);
+  box-shadow: 0 0 20px var(--ghost);
+}
+
+.ground {
+  background: var(--ground);
+  box-shadow: 0 0 20px var(--ground);
+}
+
+.ice {
+  background: var(--ice);
+  box-shadow: 0 0 20px var(--ice);
+}
+
+.normal {
+  background: var(--normal);
+  box-shadow: 0 0 20px var(--normal);
+}
+
+.poison {
+  background: var(--poison);
+  box-shadow: 0 0 20px var(--poison);
+}
+
+.psychic {
+  background: var(--psychic);
+  box-shadow: 0 0 20px var(--psychic);
+}
+
+.rock {
+  background: var(--rock);
+  box-shadow: 0 0 20px var(--rock);
+}
+
+.steel {
+  background: var(--steel);
+  box-shadow: 0 0 20px var(--steel);
+}
+
+.water {
+  background: var(--water);
+  box-shadow: 0 0 20px var(--water);
+}
+
+.fire {
+  background: var(--fire);
+  box-shadow: 0 0 20px var(--fire);
+}
+
+.image_container {
+  height: 150px;
+  width: 150px;
+}
+
+.poke_name h3 {
+  margin-top: 0px;
+}
+
+.MuiTooltip-tooltip{
+	font-size: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .thumbnail_container .img_thumbnail {
+    width: 90px;
+    height: 90px;
+  }
+  .thumbnail_container {
+    min-width: 175px;
+    height: 225px;
+    margin: 1.25rem 0.75rem;
+    padding: 1.25rem 0;
+  }
+  .image_container {
+    height: 90px;
+    width: 90px;
+  }
+  .thumbnail_container .poke_number {
+    font-size: 1.75em;
+  }
+  .poke_name h3 {
+    margin-top: 15px;
+    font-size: 1em;
+  }
+  .poke_type {
+    margin-top: 20px;
+  }
+}
