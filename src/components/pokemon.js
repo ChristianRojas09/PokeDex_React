@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/pokemon.css'
+import '../styles/Pokemon.css'
 import Zoom from '@material-ui/core/Zoom';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { colorTypeGradients } from '../utils/utils';
