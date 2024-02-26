@@ -6,9 +6,9 @@ import { StylesProvider } from "@material-ui/core/styles";
 import '../styles/InfoDialog.css';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { colorTypeGradients } from '../utils/utils';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import Delayed from './delayed';
-import { colorTypeGradients } from '../utils/utils';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import { motion } from "framer-motion"
@@ -63,9 +63,15 @@ export default function InfoDialog(props) {
     let finalColor;
 
     if (props.category.length === 2) {
-        finalColor = colorTypeGradients(props.category[0].type.name, props.category[1].type.name, props.category.length);
+        finalColor = colorTypeGradients(
+            props.category[0].type.name, 
+            props.category[1].type.name, 
+            props.category.length);
     } else {
-        finalColor = colorTypeGradients(props.category[0].type.name, props.category[0].type.name, props.category.length);
+        finalColor = colorTypeGradients(
+            props.category[0].type.name, 
+            props.category[0].type.name, 
+            props.category.length);
     }
 
     return <>
