@@ -10,7 +10,7 @@ import Filters from './components/filters'
 import { motion } from "framer-motion"
 
 
-// create list animation
+// create  main list animation
 const list = {
     visible: {
         opacity: 1,
@@ -70,6 +70,11 @@ class App extends React.Component {
             evolTypes: [],
             evolImgURL: "",
             regions: [
+                // {
+                //     name: "All Regions",
+                //     limit: 809,
+                //     offset: 0,
+                // },
                 {
                     name: "Kanto",
                     limit: 151,
@@ -157,11 +162,13 @@ class App extends React.Component {
     //call the pokeAPI to get all pokemon data
     getAllPokemons = async (offset, limit) => {
 
+        //grab data from the pokeAPI
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon?limit=${limit}&offset=${offset}`).catch((err) => console.log("Error:", err));
         this.getPokemonData(response.data.results);
 
     };
 
+    //push results to the Pokemon array 
     getPokemonData = async (result) => {
 
         const pokemonArr = [], filterArr = [];
@@ -271,6 +278,7 @@ class App extends React.Component {
             statistics.push(Obj);
         }
 
+        //set the state of the props using data from the API
         this.setState({
             weight: response.data.weight,
             height: response.data.height,
@@ -332,6 +340,7 @@ class App extends React.Component {
     //function that handles region sorting. When a region is selected the pokemon list will only show pokemon available in that region
     handleChangeRegions = (event) => {
 
+        //function to sort the pokemon by ID into their region.
         for (let i = 0; i < this.state.regions.length; i++) {
             if (this.state.regions[i].name === event.target.value) {
 
@@ -375,6 +384,7 @@ class App extends React.Component {
 
         this.state.isFilter ? sortArr = this.state.filterPokemons : sortArr = this.state.allPokemons
 
+        //if target value is ID, sort by ID, else sort by name
         if (event.target.value === "ID") {
             sortArr.sort((a, b) => (a.id > b.id) ? 1 : ((b.id > a.id) ? -1 : 0))
         } else {

@@ -1,9 +1,8 @@
 import React from 'react';
-import { withStyles } from '@material-ui/core/styles';
+import { withStyles, StylesProvider } from '@material-ui/core/styles';
 import Dialog from '@material-ui/core/Dialog';
 import MuiDialogContent from '@material-ui/core/DialogContent';
-import { StylesProvider } from "@material-ui/core/styles";
-import '../styles/InfoDialog.css';
+import '../styles/dialog.css';
 import ArrowRightAltIcon from '@material-ui/icons/ArrowRightAlt';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { colorTypeGradients } from '../utils/utils';
@@ -12,6 +11,7 @@ import Delayed from './delayed';
 import Tooltip from '@material-ui/core/Tooltip';
 import Zoom from '@material-ui/core/Zoom';
 import { motion } from "framer-motion"
+//import { StylesProvider } from "@material-ui/core/styles";
 
 const DialogContent = withStyles((theme) => ({
     root: {
@@ -57,9 +57,8 @@ const fetchGenderRate = (genderRate) => {
     }
 }
 
-//fill properties with their values/logic
+//function to create the Dialog popup. 
 export default function InfoDialog(props) {
-
     let finalColor;
 
     if (props.category.length === 2) {
@@ -153,7 +152,7 @@ export default function InfoDialog(props) {
                                         </div>
                                     </div>
                                     <div>
-                                        <div className="info_container_headings">Evolution</div>
+                                        <div className="info_container_headings">Evolution Chain</div>
                                         <div className="evolution_box">
                                             {props.evoChain.map((value, index, elements) =>
                                                 <Delayed waitBeforeShow={(index + 0) * 800} key={elements[index].species_name}>
@@ -176,7 +175,12 @@ export default function InfoDialog(props) {
                                                                         delayMethod={'debounce'}
                                                                         effect="opacity"
                                                                         className="evo_img"
-                                                                        onClick={() => props.evolutionPokemon(props.number, elements[index].species_name, props.category, elements[index].image_url)}
+                                                                        onClick={() => props.evolutionPokemon(
+                                                                                props.number, 
+                                                                                elements[index].species_name, 
+                                                                                props.category, 
+                                                                                elements[index].image_url
+                                                                                )}
                                                                     />
                                                                 </div>
                                                             </div>
@@ -197,4 +201,4 @@ export default function InfoDialog(props) {
             </div>
         </StylesProvider>
     </>;
-}
+};

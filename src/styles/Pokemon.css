@@ -1,7 +1,7 @@
 :root {
-  --grass: #5FBD58;
+  --grass: #67c260;
   --bug: #92BC2C;
-  --dark: #595761;
+  --dark: #535158;
   --dragon: #0C69C8;
   --electric: #F2D94E;
   --fairy: #EE90E6;
@@ -16,7 +16,7 @@
   --psychic: #ff2ca8;
   --rock: #a38c21;
   --steel: #5695A3;
-  --water: #539DDF;
+  --water: #56a1e4;
 }
 
 html {
