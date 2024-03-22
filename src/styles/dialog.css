@@ -54,9 +54,9 @@ html[data-theme=dark] {
 
 .pokemon_id {
 	color: var(--pokenumber);
-	font-family: 'Teko', sans-serif;
+	font-family: 'Press Start 2P', sans-serif;
 	font-weight: 400;
-	font-size: 40px;
+	font-size: 25px;
 }
 
 .info_container_data_header {

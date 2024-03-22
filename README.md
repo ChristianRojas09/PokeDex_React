@@ -1,7 +1,13 @@
 # ReadMe
 ---
 
-This a modern PokeDex using React, PokeAPI and Material UI. It contains all pokemon from generation 8 and below.
+This a modern PokeDex app using React, PokeAPI and Material UI. It contains all Pokemon from generation 8 and below.
+
+As a long time Pokemon fan, I wanted to build an app where I could access the different Pokemon and their basic information. I use this application when playing the video games or trading card game. 
+
+I learned a lot with this app. It was my first time taking data from an API - which provided it's own challenges. I used Axios to send the apps requests to the correct API endpoints. Fortunately, PokeAPI is well-documented and was easy to work. 
+
+I used the Material UI component library for this project, and while I did enjoy using it I have found others that I would use over MUI (ShadCN is quite good). 
 
 ---
 
@@ -11,6 +17,13 @@ This a modern PokeDex using React, PokeAPI and Material UI. It contains all poke
 - Search Pokemon by their name or ID number
 - View base stats of pokemon
 - View evolution chain
+
+---
+
+## Demo:
+
+![Pokedex](./public/demo/pokedexDemo1.gif)
+![Pokedex](./public/demo/pokedexDemo2.gif)
 
 ---
 ## To Do:

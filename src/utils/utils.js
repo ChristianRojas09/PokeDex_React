@@ -5,22 +5,22 @@ export const colorTypeGradients = (type1, type2, length) => {
     //declare color values that correspond with the pokemon type - i.e. purple for poison
     switch (type1) {
         case "grass":
-            color1 = "#a8ff88";
+            color1 = "#A1EEBD";
             break;
         case "poison":
             color1 = "#d6a2e4";
             break;
         case "normal":
-            color1 = "#dcdcdc";
+            color1 = "#E3E1D9";
             break;
         case "fire":
-            color1 = "#ffb971";
+            color1 = "#EFBC9B";
             break;
         case "water":
-            color1 = "#8cc4e2";
+            color1 = "#92C7CF";
             break;
         case "electric":
-            color1 = "#ffe662";
+            color1 = "#F6F193";
             break;
         case "ice":
             color1 = "#8cf5e4";

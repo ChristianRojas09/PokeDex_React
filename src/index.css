@@ -28,7 +28,7 @@ body {
   background-image: var(--bggradient);
   background-color: var(--bgcolor);
   background-repeat: repeat;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'barcadebrawl', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background 1s ease;
@@ -50,7 +50,7 @@ body {
 }
 
 .app_container .loading_text{
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'barcadebrawl', cursive;
   color: var(--colorPrimary);
 }
 

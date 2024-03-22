@@ -23,15 +23,22 @@ const Pokemon = ({ id, image, name, type, onElemClick }) => {
                     #{String(id).padStart(3, '0')}
                 </div>
                 <div className="info_icon" onClick={() => onElemClick({ name })}>
-                    <svg 
-                        stroke="currentColor" 
-                        fill="currentColor" 
-                        strokeWidth="0" 
-                        viewBox="0 0 512 512" 
-                        height="1em" 
-                        width="1em" 
-                        xmlns="http://www.w3.org/2000/svg">
-                            <path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
+                    <svg  
+                        xmlns="http://www.w3.org/2000/svg"  
+                        width="24"  
+                        height="24"  
+                        viewBox="0 0 24 24"  
+                        fill="none"  
+                        stroke="currentColor"  
+                        stroke-width="2"  
+                        stroke-linecap="round"  
+                        stroke-linejoin="round"  
+                        class="icon icon-tabler icons-tabler-outline icon-tabler-info-square">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M12 9h.01" />
+                            <path d="M3 5a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v14a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-14z" />
+                            <path d="M11 12h1v4h1" />
+                    </svg>                
                 </div>
             </div>
             <div className="image_container">

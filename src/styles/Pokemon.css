@@ -85,9 +85,9 @@ h3 {
   border-radius: 1rem;
   padding: 0.2rem 0.4rem;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 15px;
   color: var(--pokenumber);
-  font-family: 'Teko', sans-serif;
+  font-family: 'Press Start 2P', sans-serif;
 }
 
 .thumbnail_container img {
@@ -250,6 +250,7 @@ h3 {
   }
   .thumbnail_container .pokemon_number {
     font-size: 1.75em;
+    font-family: 'Press Start 2P';
   }
   .pokemon_name h3 {
     margin-top: 15px;
