@@ -1,20 +1,16 @@
 # ReadMe
 ---
+This a modern PokeDex app using React, PokeAPI, and Material UI. It contains all Pokemon from generation 8 and below.
 
-<<<<<<< HEAD
-This a modern PokeDex app using React, PokeAPI and Material UI. It contains all Pokemon from generation 8 and below.
+As a long-time Pokemon fan, I wanted to build an app where I could access the different Pokemon and their basic information. I use this application when playing video games or the trading card game. This app allows me to 
 
-As a long time Pokemon fan, I wanted to build an app where I could access the different Pokemon and their basic information. I use this application when playing the video games or trading card game. 
-
-I learned a lot with this app. It was my first time taking data from an API - which provided it's own challenges. I used Axios to send the apps requests to the correct API endpoints. Fortunately, PokeAPI is well-documented and was easy to work. 
+I learned a lot with this app. It was my first time using the PokeAPI - which provided its challenges. I used Axios to send the app's requests to the correct API endpoints. Fortunately, PokeAPI is well-documented, and after some time reading through the documentation I was able to get a good enough understanding to manipulate the data and populate it onto the app.
 
 I used the Material UI component library for this project, and while I did enjoy using it I have found others that I would use over MUI (ShadCN is quite good). 
-=======
-This a modern PokeDex using React, PokeAPI and Material UI. It contains all Pokemon from generation 8 and below.
 
-This app serves to display all Pokemon on the homepage. Users can click into each pokemon's profile by clicking the information icon.
-The profile page will display each Pokemon's summary, abilities, size, and evolution chain.
->>>>>>> cfe903f543c6c89eaed7466a7cb81c15627dde6a
+Setting up all of the filters was a challenge. I created props for all of the regions, types, IDs, and names. This way I could pass information retrieved from the API into the prop. I then filtered the props based on their value. 
+
+ex: if region name = Kanto and the ID number was **less than 151** then all Pokemon with less than 151 ID numbers were sorted into that region.
 
 ---
 
@@ -28,8 +24,9 @@ The profile page will display each Pokemon's summary, abilities, size, and evolu
 ---
 
 ## Demo:
-
+Clicking into a Pokemon's card:
 ![Pokedex](./public/demo/pokedexDemo1.gif)
+Using the search and filter functions:
 ![Pokedex](./public/demo/pokedexDemo2.gif)
 
 ---
@@ -38,21 +35,21 @@ The profile page will display each Pokemon's summary, abilities, size, and evolu
 - Update to React 18
 - Migrate Material UI (searching for different styling libraries)
 - Add map function
-
+---
 ## Cloning and Running the Application in local
 ---
 Clone the project into local
 
-Install all the npm packages. Go into the project folder and type the following 
+Install all the npm packages. Go into the project folder and type the following into your terminal:
 
 ```bash
 npm install
 ```
 
-In order to run the application Type the following command
+To run the application Type the following command in your terminal:
 
 ```bash
 npm start
 ```
 
-The Application Runs on **localhost:3000**
+Run the application on **localhost:3000**
