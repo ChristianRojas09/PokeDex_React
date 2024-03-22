@@ -10,7 +10,7 @@ I used the Material UI component library for this project, and while I did enjoy
 
 Setting up all of the filters was a challenge. I created props for all of the regions, types, IDs, and names. This way I could pass information retrieved from the API into the prop. I then filtered the props based on their value. 
 
-ex: if region name = Kanto and the ID number was **less than 151** then all Pokemon with less than 151 ID numbers were sorted into that region.
+Ex: if region name = Kanto and the ID number was **less than 151** then all Pokemon with less than 151 ID numbers were sorted into that region.
 
 ---
 
